@@ -17,13 +17,13 @@ function HeaderTwo() {
         };
     }, []);
 
-    const isSticky = (e) => {
-        const scrollTop = window.scrollY;
+    // const isSticky = (e) => {
+    //     const scrollTop = window.scrollY;
 
-        scrollTop >= 90
-            ? header.current?.classList.add('is-sticky')
-            : header.current?.classList.remove('is-sticky');
-    };
+    //     scrollTop >= 90
+    //         ? header.current?.classList.add('is-sticky')
+    //         : header.current?.classList.remove('is-sticky');
+    // };
     //   End Here
 
     const router = useRouter();
