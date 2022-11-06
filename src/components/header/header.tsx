@@ -9,13 +9,13 @@ function HeaderTwo() {
 
     // Header Sticky Activation
     const header = useRef();
-    useEffect(() => {
-        window.addEventListener('scroll', isSticky);
+    // useEffect(() => {
+    //     window.addEventListener('scroll', isSticky);
 
-        return () => {
-            window.removeEventListener('scroll', isSticky);
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener('scroll', isSticky);
+    //     };
+    // }, []);
 
     // const isSticky = (e) => {
     //     const scrollTop = window.scrollY;
