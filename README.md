@@ -1,6 +1,9 @@
 #Feedback on Questions asked for the Technical Test
-#The Application can be found at https://arm-deployment.vercel.app/
+# The Application can be found at https://arm-deployment.netlify.app/ 
+
+# and  https://arm-deployment.vercel.app/
 # and application github repo is https://github.com/lummy1/arm-deployment
+
 
 1. How long did you spend on the coding test?
 
