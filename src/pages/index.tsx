@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head';
 import PropTypes from 'prop-types';
-import { useState, useEffect  } from 'react';
+import { useState, useEffect, startTransition  } from 'react';
 import Header from '../components/header/header';
 import AllItems from '../components/posts/all-items';
 import { displayAlert } from "../utils/toast";
@@ -116,8 +116,10 @@ function allItemsPage() {
                         console.log(resp);
                         if (resp) {
                             console.log(resp);
+                            startTransition(() => {
                             setNews(resp?.data);
                             setFilteredResults(true);
+                            })
                             setRefreshKey(oldKey => oldKey +1)
                         } else {
                             // display error messsage
