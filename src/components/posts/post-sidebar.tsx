@@ -47,10 +47,7 @@ function PostSidebar({ categories }: {categories:any}) {
         const val = data?.industries?.join(',');
         console.log(val);
         try {
-            // const api = "https://api.marketaux.com/v1/news/all?filter_entities=true&must_have_entities=true&language=en&api_token=B5jPRKP0TrGAeDHAl34dGcEqOiKr7VbNQQWhUJwR&industries=" + val + "&country=us";
-            // const respJSON = await fetch(api);
-            // const resp = await respJSON.json();
-            // console.log(resp);
+           
             return val;
         } catch (error) {
             console.log(error);
