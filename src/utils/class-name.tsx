@@ -1,1 +1,1 @@
-export const className = (...classes) => classes.filter(Boolean).join('');
+export const className = (...classes:any[]) => classes.filter(Boolean).join('');

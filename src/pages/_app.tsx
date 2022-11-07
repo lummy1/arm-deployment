@@ -4,7 +4,7 @@ import Layout from '../components/layout/layout';
 import { ScrollToTop } from '../components/scroll';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: { Component:any, pageProps:any } ) {
     return (
         <Layout>
             <Head>

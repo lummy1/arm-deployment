@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
-import PostItem from './post-item';
 import { useRouter } from 'next/router'
+import PostItem from './post-item';
 
-function PostsGrid({ posts }) {
+
+function PostsGrid({ posts }: {posts:any}) {
 
     const router = useRouter();
     const val = router?.query?.data != undefined ? router?.query?.data : '';

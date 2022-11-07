@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
-import  { FaCalendar }  from 'react-icons/fa'
+import  { FaCalendar }  from 'react-icons/fa';
 
 
-function PostItem({ posts }) {
+function PostItem({ posts }: {posts:any}) {
     const formattedDate = new Date(posts?.published_at).toLocaleDateString('en-US', {
         day: 'numeric',
         month: 'long',

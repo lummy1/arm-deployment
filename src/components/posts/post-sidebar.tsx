@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { FaSearch } from 'react-icons/fa';
 import { useState } from 'react';
-import {Router, useNavigate } from "react-router-dom";
 import {useRouter } from 'next/router';
 
-function PostSidebar({ categories }) {
+function PostSidebar({ categories }: {categories:any}) {
 
     console.log(categories);
     const router = useRouter();
@@ -25,7 +24,7 @@ function PostSidebar({ categories }) {
           console.log(`${value} is ${checked}`);
           if (checked) {
               setData({
-                  industries: [...industries, value],
+                  industries: [...industries, value as never],
               });
           }
           else {

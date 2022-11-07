@@ -2,10 +2,9 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as FaIcons from 'react-icons/fa';
-import PostBanner from './post-banner';
 import PostSidebar from '../post-sidebar';
 
-function PostContent({ post, categories}) {
+function PostContent({ post, categories}: {post:any , categories:any}) {
     // const imagePath = `/images/posts/${post.slug}/${post.image}`;
     // const BlockQuoteIcon = FaIcons[post.icon];
     //const dateIcon= FaIcons[CiCalendarDate];

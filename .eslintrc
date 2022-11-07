@@ -30,6 +30,7 @@
         }
     },
     "rules": {
+       
         "@next/next/no-img-element": "off",
         "jsx-a11y/href-no-hash": 0,
         "jsx-a11y/anchor-is-valid": [
@@ -79,14 +80,14 @@
                 "prefer-arrow-callback": "off"
             }
         ],
-
-        /* React */
-        "react/jsx-filename-extension": [
-            "warn",
-            {
-                "extensions": [".js", "jsx"]
-            }
-        ],
+        "react/jsx-filename-extension": "off",
+        // /* React */
+        // "react/jsx-filename-extension": [
+        //     "warn",
+        //     {
+        //         "extensions": [".js", "jsx"]
+        //     }
+        // ],
         "react/jsx-props-no-spreading": 0,
         "react/require-default-props": 0,
         "no-unused-expressions": 0,

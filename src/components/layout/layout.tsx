@@ -3,7 +3,7 @@ import Footer from './footer';
 
 export * from '../scroll';
 
-function Layout({ children }) {
+function Layout({ children }: {children:any}) {
     return (
         <>
             <main>{children}</main>
